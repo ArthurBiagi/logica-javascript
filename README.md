@@ -13,3 +13,14 @@ Este repositório contém meus códigos, exercícios e projetos práticos desenv
 
 ## 📌 Observações sobre os Exercícios
 Os códigos contidos na pasta `Listanaoobrigatorios` são desafios complementares focados em lógica pura de JavaScript. Eles foram desenvolvidos de forma integrada, utilizando a mesma estrutura de interface (HTML/CSS) contida na pasta `logica-js-projeto_inicial`.
+
+## 🛠️ Conteúdos Aprendidos & Módulos:
+
+* **Módulo 1: Lógica de Programação Básica** (`logica-js-projeto_inicial`)
+  * Variáveis, operadores, estruturas condicionais (`if`/`else`) e loops (`while`).
+  * Desafios extras de lógica pura contidos na pasta `Listanaoobrigatorios`.
+
+* **Módulo 2: Funções e Listas** (`logica-js-funcoes-listas`) 🚀 *Estudando Agora*
+  * Criação e isolamento de funções com parâmetros e retornos.
+  * Manipulação de arrays (listas) em JavaScript.
+  * Integração de lógica com elementos visuais da tela.
