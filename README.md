@@ -10,3 +10,6 @@ Este repositório contém meus códigos, exercícios e projetos práticos desenv
 ## 🚀 Como rodar o projeto prático:
 1. Faça o clone ou baixe os arquivos.
 2. Abra o arquivo `index.html` no seu navegador.
+
+## 📌 Observações sobre os Exercícios
+Os códigos contidos na pasta `Listanaoobrigatorios` são desafios complementares focados em lógica pura de JavaScript. Eles foram desenvolvidos de forma integrada, utilizando a mesma estrutura de interface (HTML/CSS) contida na pasta `logica-js-projeto_inicial`.
