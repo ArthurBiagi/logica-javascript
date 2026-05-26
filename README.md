@@ -24,3 +24,4 @@ Os códigos contidos na pasta `Listanaoobrigatorios` são desafios complementare
   * Criação e isolamento de funções com parâmetros e retornos.
   * Manipulação de arrays (listas) em JavaScript.
   * Integração de lógica com elementos visuais da tela.
+  * Mais desafios extras contidos na pasta `Listanaoobrigatorios-func&list`.
