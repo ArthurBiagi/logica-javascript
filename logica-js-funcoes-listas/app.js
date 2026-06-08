@@ -1,4 +1,4 @@
-let numeroSecreto = 5;
+let numeroSecreto = gerarNumAleatorio();
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
