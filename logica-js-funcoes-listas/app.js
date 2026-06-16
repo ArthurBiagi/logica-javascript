@@ -23,8 +23,14 @@ function verificarChute() {
         exibirTextoNaTela('p', 'O número secreto é menor');
     }
     tentativas++;
+    limparCampo()
 };
 
 function gerarNumAleatorio() {
     return parseInt(Math.random() * 10 + 1)
 };
+
+function limparCampo(){
+    document.querySelector('imput');
+    chute.value = '';
+}
