@@ -32,8 +32,14 @@ function gerarNumAleatorio() {
     return parseInt(Math.random() * 10 + 1)
 };
 
-function limparCampo(){
+function limparCampo() {
     document.querySelector('imput');
     chute.value = '';
+}
+
+function reiniciarJogo() {
+    gerarNumAleatorio();
+    limparCampo();
+    tentativas = 1;
 }
 
