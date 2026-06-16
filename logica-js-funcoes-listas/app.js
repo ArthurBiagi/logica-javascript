@@ -28,7 +28,7 @@ function verificarChute() {
         exibirTextoNaTela('p', 'O número secreto é menor');
     }
     tentativas++;
-    limparCampo()
+    limparCampo();
 };
 
 function gerarNumAleatorio() {
