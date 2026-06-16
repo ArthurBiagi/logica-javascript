@@ -36,7 +36,7 @@ function gerarNumAleatorio() {
 };
 
 function limparCampo() {
-    document.querySelector('imput').value = '';
+    document.querySelector('input').value = '';
 }
 
 function reiniciarJogo() {
