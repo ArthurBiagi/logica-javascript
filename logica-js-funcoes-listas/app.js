@@ -16,7 +16,9 @@ function verificarChute() {
         exibirTextoNaTela('h1', 'Parabéns!');
         let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
         let mensagemTentativas = `Você descobriu o número secreto em ${tentativas} ${palavraTentativa}`;
-        exibirTextoNaTela('p', mensagemTentativas)
+        exibirTextoNaTela('p', mensagemTentativas);
+        document.getElementById('reiniciar');
+
     } else if (chute < numeroSecreto) {
         exibirTextoNaTela('p', 'O número secreto é maior');
     } else {
@@ -34,3 +36,4 @@ function limparCampo(){
     document.querySelector('imput');
     chute.value = '';
 }
+
