@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafios de Lógica JS</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        section { border-bottom: 1px solid #ccc; padding: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Exercícios</h1>
+
+    <section>
+        <h3>1. Calcular IMC</h3>
+        <input type="number" id="altura" placeholder="Altura (ex: 1.75)">
+        <input type="number" id="peso" placeholder="Peso (ex: 70)">
+        <button onclick="calcularIMC()">Calcular</button>
+        <p id="resultadoIMC"></p>
+    </section>
+
+    <section>
+        <h3>3. Dólar para Real</h3>
+        <input type="number" id="valorDolar" placeholder="Valor em Dólar">
+        <button onclick="converterDolar()">Converter</button>
+        <p id="resultadoMoeda"></p>
+    </section>
+
+    <script>
+        // Lógica do Exercício 1
+        function calcularIMC() {
+            let altura = document.getElementById('altura').value;
+            let peso = document.getElementById('peso').value;
+            let imc = peso / (altura * altura);
+            document.getElementById('resultadoIMC').innerText = `O IMC é: ${imc.toFixed(2)}`;
+        }
+
+        // Lógica do Exercício 3
+        function converterDolar() {
+            let dolar = document.getElementById('valorDolar').value;
+            let cotacao = 4.80;
+            let reais = dolar * cotacao;
+            document.getElementById('resultadoMoeda').innerText = `Valor em Reais: R$ ${reais.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
