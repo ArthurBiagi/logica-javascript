@@ -27,22 +27,5 @@
         <p id="resultadoMoeda"></p>
     </section>
 
-    <script>
-        // Lógica do Exercício 1
-        function calcularIMC() {
-            let altura = document.getElementById('altura').value;
-            let peso = document.getElementById('peso').value;
-            let imc = peso / (altura * altura);
-            document.getElementById('resultadoIMC').innerText = `O IMC é: ${imc.toFixed(2)}`;
-        }
-
-        // Lógica do Exercício 3
-        function converterDolar() {
-            let dolar = document.getElementById('valorDolar').value;
-            let cotacao = 4.80;
-            let reais = dolar * cotacao;
-            document.getElementById('resultadoMoeda').innerText = `Valor em Reais: R$ ${reais.toFixed(2)}`;
-        }
-    </script>
 </body>
 </html>
