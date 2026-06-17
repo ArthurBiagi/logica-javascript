@@ -6,4 +6,3 @@ function calculoIMC(Altura, Peso) {
     let IMC = Peso / (Altura * Altura);
     return IMC;
 }
-calculoIMC
