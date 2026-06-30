@@ -1,5 +1,5 @@
-let Altura = prompt('Indique a altura da pessoa:');
-let Peso = prompt('Indique o peso da pessoa:');
+let Altura = prompt('Indique a altura da pessoa (em cm):');
+let Peso = prompt('Indique o peso da pessoa (em kg):');
 
 function exibirTexto(tag, texto) {
     let campo = document.querySelector(tag);
