@@ -19,4 +19,10 @@ let N1 = parseFloat(document.getElementById('fatorialInput').value);
 function calculoFatorial(N1){
     let fatorial = 1;
     let i = 1;
+
+    while (i <= N1){
+        fatorial = fatorial * i;
+        i++
+    }
+    exibirTexto('#resultadoFatorial', `O fatorial de ${N1} é: ${fatorial}`);
 }
