@@ -15,6 +15,7 @@
             border-bottom: 1px solid #ccc;
             padding: 10px 0;
         }
+
     </style>
 </head>
 
@@ -22,18 +23,32 @@
 
     <h1>Lista de Exercícios</h1>
 
+<div class="container__conteudo">
+    
+    <div class="bloco-exercicio">
         <div class="container__texto">
-            <h1>Resultado:</h1>
-            <p class="texto__paragrafo">Insira os dados para o cálculo do IMC</p>
+            <h1>Cálculo do IMC</h1>
+            <p id="resultadoIMC" class="texto__paragrafo">Insira os dados para o cálculo do IMC</p>
         </div>
-                <input type="number" id="alturaInput" placeholder="Altura em metros (ex: 1.75)" class="container__input">
-                <input type="number" id="pesoInput" placeholder="Peso em kg (ex: 70)" class="container__input">
-            <div class="chute container__botoes">
-                <button onclick="calculoIMC()" class="container__botao">Calcular IMC</button>
-            </div>
-            <div class="container_botaoF">
-                <button onclick="calculoFatorial()" class="container__botao">Calcular Fatorial</button>
-            </div>                    
+        <input type="number" id="alturaInput" placeholder="Altura em metros (ex: 1.75)" class="container__input">
+        <input type="number" id="pesoInput" placeholder="Peso em kg (ex: 70)" class="container__input">
+        <div class="container__botoes">
+            <button onclick="calculoIMC()" class="container__botao">Calcular IMC</button>
+        </div>
+    </div>
+
+    <div class="bloco-exercicio">
+        <div class="container__texto">
+            <h1>Cálculo de Fatorial</h1>
+            <p id="resultadoFatorial" class="texto__paragrafo">Insira um número para calcular o fatorial</p>
+        </div>
+        <input type="number" id="fatorialInput" placeholder="Digite um número inteiro" class="container__input">
+        <div class="container__botoes">
+            <button onclick="calcularFatorial()" class="container__botao">Calcular Fatorial</button>
+        </div>
+    </div>
+
+</div>
     <script src="exs não obrigatorios 3.js"></script>
 </body>
 
