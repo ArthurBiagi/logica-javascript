@@ -15,6 +15,8 @@ function calculoIMC() {
     }
 }
 
+let N1 = parseFloat(document.getElementById('fatorialInput').value);
 function calculoFatorial(N1){
-    
+    let fatorial = 1;
+    let i = 1;
 }
