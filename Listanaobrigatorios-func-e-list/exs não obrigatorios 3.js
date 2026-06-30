@@ -4,7 +4,8 @@ function exibirTexto(tag, texto) {
 }
 
 function calculoIMC() {
-    let Altura = parseFloat(document.getElementById('alturaInput'))
+    let Altura = parseFloat(document.getElementById('alturaInput').value);
+    let Peso = parseFloat(document.getElementById('pesoInput').value);
     let IMC = Peso / (Altura * Altura);
     exibirTexto('H1', `O IMC é ${IMC}`);
 }
