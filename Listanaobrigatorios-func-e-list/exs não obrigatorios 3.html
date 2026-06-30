@@ -26,10 +26,11 @@
         <div class="container__conteudo">
             <div class="container__informacoes">
                 <div class="container__texto">
-                    <h1></h1>
-                    <p class="texto__paragrafo"></p>
+                    <h1>Resultado:</h1>
+                    <p class="texto__paragrafo">Insira os dados para o cálculo do IMC</p>
                 </div>
-                <input type="number" min="1" max="10" class="container__input">
+                    <input type="number" id="alturaInput" placeholder="Altura em metros (ex: 1.75)" class="container__input">
+                    <input type="number" id="pesoInput" placeholder="Peso em kg (ex: 70)" class="container__input">
                 <div class="chute container__botoes">
                     <button onclick="calculoIMC()" class="container__botao">Calcular IMC</button>
             </div>
