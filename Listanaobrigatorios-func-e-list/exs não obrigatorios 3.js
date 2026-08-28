@@ -20,6 +20,7 @@ function calculoFatorial(N1) {
         exibirTexto('#resultadoFatorial', "Digite um número válido");
         return;
     }
+    //o Botão do html ja passa o input como parâmtro
     let fatorial = 1;
     let i = 1;
 
