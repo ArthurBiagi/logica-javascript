@@ -15,8 +15,11 @@ function calculoIMC() {
     }
 }
 
-function calculoFatorial(){
-    let N1 = parseFloat(document.getElementById('fatorialInput').value);
+function calculoFatorial(N1){
+    if(isNaN(N1) || N1 < 0){
+        exibirTexto('#resultadoFatorial', "Digite um número válido");
+        return;
+    }
     let fatorial = 1;
     let i = 1;
 
@@ -26,3 +29,5 @@ function calculoFatorial(){
     }
     exibirTexto('#resultadoFatorial', `O fatorial de ${N1} é: ${fatorial}`);
 }
+
+
