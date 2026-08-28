@@ -16,7 +16,7 @@ function calculoIMC() {
 }
 
 function calculoFatorial(N1) {
-    if (isNaN(N1) || N1 < 0) {
+    if (isNaN(N1) || N1 < 0){
         exibirTexto('#resultadoFatorial', "Digite um número válido");
         return;
     }
@@ -29,6 +29,16 @@ function calculoFatorial(N1) {
         i++
     }
     exibirTexto('#resultadoFatorial', `O fatorial de ${N1} é: ${fatorial}`);
+}
+
+function converteDolarReais(Valor){
+    if (isNaN(valor) || valor < 0){
+        exibirTexto('#ResultadoConversao', "Digite um valor válido");
+        return;
+    }
+    //o Botão do html ja passa o input como parâmetro
+    let conversao = valor * 4.8
+    exibirTexto('#ResultadoConversao', `O valor em Reais é: ${conversao}`);
 }
 
 
