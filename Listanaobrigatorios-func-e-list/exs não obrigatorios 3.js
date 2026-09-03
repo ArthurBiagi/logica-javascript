@@ -84,3 +84,12 @@ function calculaPerimetroCirculo(raio){
     exibirTexto('#ResultadosCirculo', `O Perímetro do Círculo é: ${perimetroC}`);
 }
 
+function calculoTabuada(Num1){
+    if(isNaN(Num1) || Num1 < 0){
+        exibirTexto('#TabuadaR', "Digite um número válido");
+        return;
+    }
+
+    
+}
+
