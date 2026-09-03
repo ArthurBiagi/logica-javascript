@@ -44,7 +44,7 @@ function converteDolarReais(valor){
 
 function CalcularAreaRet(altura, largura) {
     if (isNaN(altura) || isNaN(largura) || altura <= 0 || largura <= 0) {
-        exibirTexto('#AlturaeLargura', "Digite uma Altura e Largura válidos");
+        exibirTexto('#AlturaeLargura', "Digite uma Altura e Largura válidas");
         return;
     }
 
@@ -53,6 +53,12 @@ function CalcularAreaRet(altura, largura) {
 }
 
 function calculaPerimetro(altura, largura){
-    
+    if (isNaN(altura) || isNaN(largura) || altura < 0 || largura < 0){
+        exibirTexto('#AlturaeLargura', "Digite uma altura e largura Válidas");
+        return;
+    }
+
+    let perimetro = (altura*2) + (largura*2);
+    exibirTexto('#AlturaeLargura', `O Perímetro do Retângulo é: ${perimetro}`);
 }
 
