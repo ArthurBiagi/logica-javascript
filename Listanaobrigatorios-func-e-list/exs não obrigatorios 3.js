@@ -52,7 +52,7 @@ function CalcularAreaRet(altura, largura) {
     exibirTexto('#AlturaeLargura', `A Área do Retângulo é: ${area}`);
 }
 
-function calculaPerimetro(altura, largura){
+function calculaPerimetroRet(altura, largura){
     if (isNaN(altura) || isNaN(largura) || altura < 0 || largura < 0){
         exibirTexto('#AlturaeLargura', "Digite uma altura e largura Válidas");
         return;
