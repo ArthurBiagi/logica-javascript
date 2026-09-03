@@ -11,10 +11,6 @@
             line-height: 1.6;
         }
 
-        section {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
     </style>
 </head>
 
@@ -45,6 +41,18 @@
             <div class="container__botoes">
                 <button onclick="calculoFatorial(parseInt(document.getElementById('fatorialInput').value))"
                     class="container__botao">Calcular Fatorial</button>
+            </div>
+        </div>
+
+        <div class="bloco-exercicio">
+            <div class="container__texto">
+                <h1>Conversão de Dólar para Real</h1>
+                <p id="ResultadoConversao" class="texto__paragrafo">Insira o valor em dólares</p>
+            </div>
+            <input type="number" id="conversaoInput" placeholder="Valor em dólares" class="container__input">
+            <div class="container__botoes">
+                <button onclick="converteDolarReais(parseFloat(document.getElementById('conversaoInput').value))"
+                    class="container__botao">Converter de Dólar para Real</button>
             </div>
         </div>
 
