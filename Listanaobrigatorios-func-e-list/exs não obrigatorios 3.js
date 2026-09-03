@@ -37,7 +37,8 @@ function converteDolarReais(valor){
         return;
     }
     //o Botão do html ja passa o input como parâmetro
-    let conversao = valor * 4.8
+    let cotacaoDolar = 4.8;
+    let conversao = valor * cotacaoDolar;
     exibirTexto('#ResultadoConversao', `O valor em Reais é: ${conversao}`);
 }
 
