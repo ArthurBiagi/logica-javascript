@@ -43,8 +43,6 @@ function converteDolarReais(valor){
 }
 
 function CalcularAreaRet(altura, largura) {
-    console.log('Valores recebidos:', altura, largura); 
-
     if (isNaN(altura) || isNaN(largura) || altura <= 0 || largura <= 0) {
         exibirTexto('#AlturaeLargura', "Digite uma Altura e Largura válidos");
         return;
@@ -52,5 +50,9 @@ function CalcularAreaRet(altura, largura) {
 
     let area = altura * largura;
     exibirTexto('#AlturaeLargura', `A Área do Retângulo é: ${area}`);
+}
+
+function calculaPerimetro(altura, largura){
+    
 }
 
