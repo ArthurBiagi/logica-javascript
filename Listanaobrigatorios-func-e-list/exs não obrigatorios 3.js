@@ -68,8 +68,7 @@ function CalcularAreaCirculo(raio){
         return;
     }
 
-    let pi = 3.14
-    let areaC = pi * (raio*raio);
+    let areaC = Math.PI * (raio*raio);
     exibirTexto('#ResultadosCirculo', `A Área do Círculo é: ${areaC}`);
 }
 
@@ -79,8 +78,7 @@ function calculaPerimetroCirculo(raio){
         return;
     }
 
-    let pi = 3.14
-    let perimetroC = 2 * pi * raio;
+    let perimetroC = 2 * Math.PI * raio;
     exibirTexto('#ResultadosCirculo', `O Perímetro do Círculo é: ${perimetroC}`);
 }
 
