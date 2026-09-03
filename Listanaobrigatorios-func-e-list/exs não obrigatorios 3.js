@@ -48,8 +48,8 @@ function CalcularAreaRet(altura, largura) {
         return;
     }
 
-    let area = altura * largura;
-    exibirTexto('#AlturaeLargura', `A Área do Retângulo é: ${area}`);
+    let areaR = altura * largura;
+    exibirTexto('#AlturaeLargura', `A Área do Retângulo é: ${areaR}`);
 }
 
 function calculaPerimetroRet(altura, largura){
@@ -58,7 +58,29 @@ function calculaPerimetroRet(altura, largura){
         return;
     }
 
-    let perimetro = (altura*2) + (largura*2);
-    exibirTexto('#AlturaeLargura', `O Perímetro do Retângulo é: ${perimetro}`);
+    let perimetroR = (altura*2) + (largura*2);
+    exibirTexto('#AlturaeLargura', `O Perímetro do Retângulo é: ${perimetroR}`);
+}
+
+function CalcularAreaCirculo(raio){
+    if(isNaN(raio) || raio < 0){
+        exibirTexto('#ResultadosCirculo', "Digite um valor de raio válido");
+        return;
+    }
+
+    let pi = 3.14
+    let areaC = pi * (raio*raio);
+    exibirTexto('#ResultadosCirculo', `A Área do Círculo é: ${areaC}`);
+}
+
+function calculaPerimetroCirculo(raio){
+    if(isNaN(raio) || raio < 0){
+        exibirTexto('#ResultadosCirculo', "Digite um valor de raio válido");
+        return;
+    }
+
+    let pi = 3.14
+    let perimetroC = 2 * pi * raio;
+    exibirTexto('#ResultadosCirculo', `O Perímetro do Círculo é: ${perimetroC}`);
 }
 
