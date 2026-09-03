@@ -69,8 +69,25 @@
                 </button>
             </div>
             <div class="container__botoes">
-                <button onclick="calculaPerimetro(parseFloat(document.getElementById('alturaRetInput').value), parseFloat(document.getElementById('larguraInput').value))"
+                <button onclick="calculaPerimetroRet(parseFloat(document.getElementById('alturaRetInput').value), parseFloat(document.getElementById('larguraInput').value))"
                     class="container__botao">Calcular Perimetro do Retângulo</button>
+            </div>
+        </div>
+
+        <div class="bloco-exercicio">
+            <div class="container__texto">
+                <h1>Cálculo da Área e Perímetro de um Círculo</h1>
+                <p id="AlturaeLargura" class="texto__paragrafo">Insira o Raio do círculo</p>
+            </div>
+            <input type="number" id="RaioInput" placeholder="Raio" class="container__input">
+            <div class="container__botoes">
+                <button onclick="CalcularAreaCirculo(parseFloat(document.getElementById('RaioInput').value))" class="container__botao">
+                     Calcular Área do Círculo
+                </button>
+            </div>
+            <div class="container__botoes">
+                <button onclick="calculaPerimetroCirculo(parseFloat(document.getElementById('RaioInput').value))"class="container__botao">
+                    Calcular Perimetro do Retângulo</button>
             </div>
         </div>
 
