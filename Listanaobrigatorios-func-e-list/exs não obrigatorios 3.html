@@ -64,8 +64,9 @@
             <input type="number" id="alturaInput" placeholder="Altura" class="container__input">
             <input type="number" id="larguraInput" placeholder="Largura" class="container__input">
             <div class="container__botoes">
-                <button onclick="calculaArea(parseFloat(document.getElementById('areaInput').value))"
-                    class="container__botao">Calcular Área do Retângulo</button>
+                <button onclick="CalcularAreaRet(parseFloat(document.getElementById('alturaInput').value), parseFloat(document.getElementById('larguraInput').value))" class="container__botao">
+                     Calcular Área do Retângulo
+                </button>
             </div>
             <div class="container__botoes">
                 <button onclick="calculaPerimetro(parseFloat(document.getElementById('conversaoInput').value))"

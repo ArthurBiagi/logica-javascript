@@ -42,4 +42,15 @@ function converteDolarReais(valor){
     exibirTexto('#ResultadoConversao', `O valor em Reais é: ${conversao}`);
 }
 
+function CalcularAreaRet(altura, largura) {
+    console.log('Valores recebidos:', altura, largura); 
+
+    if (isNaN(altura) || isNaN(largura) || altura <= 0 || largura <= 0) {
+        exibirTexto('#AlturaeLargura', "Digite uma Altura e Largura válidos");
+        return;
+    }
+
+    let area = altura * largura;
+    exibirTexto('#AlturaeLargura', `A Área do Retângulo é: ${area}`);
+}
 
