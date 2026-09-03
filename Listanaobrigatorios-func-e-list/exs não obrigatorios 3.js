@@ -31,7 +31,7 @@ function calculoFatorial(N1) {
     exibirTexto('#resultadoFatorial', `O fatorial de ${N1} é: ${fatorial}`);
 }
 
-function converteDolarReais(Valor){
+function converteDolarReais(valor){
     if (isNaN(valor) || valor < 0){
         exibirTexto('#ResultadoConversao', "Digite um valor válido");
         return;
