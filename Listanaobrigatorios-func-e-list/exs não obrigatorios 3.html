@@ -58,13 +58,18 @@
 
         <div class="bloco-exercicio">
             <div class="container__texto">
-                <h1>Conversão de Dólar para Real</h1>
-                <p id="ResultadoConversao" class="texto__paragrafo">Insira o valor em dólares</p>
+                <h1>Cálculo da Área e Perímetro de um Retângulo</h1>
+                <p id="AlturaeLargura" class="texto__paragrafo">Insira a altura e a largura do Retângulo</p>
             </div>
-            <input type="number" id="conversaoInput" placeholder="Valor em dólares" class="container__input">
+            <input type="number" id="alturaInput" placeholder="Altura" class="container__input">
+            <input type="number" id="larguraInput" placeholder="Largura" class="container__input">
             <div class="container__botoes">
-                <button onclick="converteDolarReais(parseFloat(document.getElementById('conversaoInput').value))"
-                    class="container__botao">Converter de Dólar para Real</button>
+                <button onclick="calculaArea(parseFloat(document.getElementById('areaInput').value))"
+                    class="container__botao">Calcular Área do Retângulo</button>
+            </div>
+            <div class="container__botoes">
+                <button onclick="calculaPerimetro(parseFloat(document.getElementById('conversaoInput').value))"
+                    class="container__botao">Calcular Perimetro do Retângulo</button>
             </div>
         </div>
 
