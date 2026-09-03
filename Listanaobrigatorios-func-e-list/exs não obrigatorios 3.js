@@ -90,6 +90,14 @@ function calculoTabuada(Num1){
         return;
     }
 
-    
+    let resultado = '';
+
+    for (let i = 1; i <= 10; i++){
+        let mupltiplicacao = Num1 * i;
+
+        resultado += `${Num1} X ${i} = ${mupltiplicacao}<br>`;
+    }
+
+    exibirTexto('#TabuadaR', resultado);
 }
 
